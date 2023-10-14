@@ -4,7 +4,7 @@ import arrow from '../assets/material-symbols_keyboard-arrow-down-rounded.svg'
 function Navbar() {
   return (
   
-    <div className=' fixed top-0 left-0 w-full justify-around h-[85px]'>
+    <div className=' fixed top-0 left-0 w-full z-[1000] bg-white shadow-lg justify-around h-[85px]'>
      <div className='nav relative flex w-full justify-around items-center p-3'>
         <div className='flex'>
         <img src={Logo} className='w-[138px] h-[45px] object-cover' />
