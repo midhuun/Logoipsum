@@ -47,3 +47,14 @@ background: var(--gradient-border-outline, linear-gradient(96deg, #0076CE 0%, #9
 .footer{
   background: var(--gradient-border-outline, linear-gradient(96deg, #0076CE -7.82%, #9400D3 143.96%));
 }
+.search-input:focus  .results{
+  display: block !important;
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+
+
+

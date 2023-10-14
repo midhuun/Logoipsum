@@ -1,13 +1,11 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
-import Home from './Components/Home';
-import Solutions from './Components/JoinUs';
+import Landing from './Components/Landing';
 import Navbar from './Components/Navbar';
-import Features from './Features';
-import Footer from './Components/Footer';
 import User from './User';
 import { UserContext } from './Components/UserContext';
+import Footer from './Components/Footer';
 function App() {
   const {data,setData,searchValue,results,setResults} = useContext(UserContext);
   
@@ -34,17 +32,14 @@ function App() {
     <Router>
       <div className='container'>
         <div className='home'>
-          <Navbar />
-          <Home />
+          <Navbar /> 
         </div>
-        <Solutions />
-        <Features />
-        <Footer />
-        <Link to="/user">Show User</Link>
       </div>
       <Routes>
         <Route path='/user' element={<User />} />
+        <Route path='/' element={<Landing/>} />
       </Routes>
+      <Footer /> 
     </Router>
   );
 }
