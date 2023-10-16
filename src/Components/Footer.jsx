@@ -3,24 +3,24 @@ import Logo from '../assets/white-logo.png'
 import vector from '../assets/Vector.svg'
 function Footer() {
   return (
-    <div className='footer mt-[100px] min-w-full  text-white h-[340px]'>
-      <div className='flex px-[10%] justify-between pt-[30px]'>
-         <div>
+    <div id='about' className='footer mt-[100px] min-w-full  text-white min-h-[340px]'>
+      <div className='flex flex-col md:flex-row px-[10%] justify-between pt-[30px]'>
+         <div className=''>
           <img src={Logo} />
           <p className='text-white max-w-[270px] py-2'>India's first platform dedicated to simplifying partner search</p>
          </div>
-         <a className='uppercase font-bold'>Company</a>
-         <a className='uppercase font-bold'>Solutions </a>
-         <a className='uppercase font-bold'>Resources</a>
-         <a className='uppercase font-bold'>Support</a>
-         <a className='uppercase font-bold'>Legal</a>
+         <a href='#home' className='uppercase font-bold py-3 '>Company</a>
+         <a className='uppercase font-bold py-3 '>Solutions </a>
+         <a className='uppercase font-bold py-3'>Resources</a>
+         <a className='uppercase font-bold py-3'>Support</a>
+         <a className='uppercase font-bold py-3'>Legal</a>
       </div>
-      <div className='px-[10%]  pt-[100px]'>
+      <div className='px-[10%] pt-[20px]  md:pt-[100px]'>
       <hr/>
-      <div className='flex justify-between pt-[24px]'>
+      <div className='flex flex-col md:flex-row items-center  justify-between pt-[24px]'>
         <p>Sambhaji Nagar, No2, St. Antony Road, Chembur, Mumbai - 400071, Maharashtra</p>
-        <div className='flex'>
-        <svg className='mx-4'
+        <div className='flex my-4 '>
+        <svg className='mx-4 h-[25px] w-[25px]'
   xmlns="http://www.w3.org/2000/svg"
   width={24}
   height={25}
@@ -34,7 +34,7 @@ function Footer() {
     fill="white"
   />
 </svg>
-     <svg className='mx-4'
+     <svg className='mx-4 h-[20px] w-[20px]'
   xmlns="http://www.w3.org/2000/svg"
   width={24}
   height={25}
@@ -48,11 +48,11 @@ function Footer() {
     fill="white"
   />
 </svg>
- <img src={vector} className='mx-4' />
-        <svg className='mx-4'
+ <img src={vector} className='mx-4 h-[15px] w-[15px]' />
+        <svg className='mx-4 h-[20px] w-[20px]'
         xmlns="http://www.w3.org/2000/svg"
-        width={20}
-        height={21}
+        width={15}
+        height={15}
         viewBox="0 0 20 21"
         fill="none"
       >
@@ -73,7 +73,6 @@ function Footer() {
           </clipPath>
         </defs>
       </svg>
-      
           </div>
       </div>
       </div>

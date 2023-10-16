@@ -3,6 +3,9 @@
 :root {
   --gradient-border-outline: linear-gradient(96deg, #0076CE 0%, #8850f2 100%);
 }
+html{
+  scroll-behavior: smooth;
+}
 body{
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
@@ -52,8 +55,9 @@ background: var(--gradient-border-outline, linear-gradient(96deg, #0076CE 0%, #9
   visibility: visible;
   opacity: 1;
 }
-
-
+.menu{
+  background: var(--gradient-border-outline) !important;
+}
 
 
 

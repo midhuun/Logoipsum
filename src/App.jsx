@@ -8,7 +8,7 @@ import { UserContext } from './Components/UserContext';
 import Footer from './Components/Footer';
 function App() {
   const {data,setData,searchValue,results,setResults} = useContext(UserContext);
-  
+  console.log(data);
   useEffect(() => {
     const fetchData = async () => {
       try {

@@ -3,7 +3,7 @@ import Card from './Card';
 
 function Solutions() {
   return (
-    <div className='pt-[100px] flex justify-center flex-col text-center'>
+    <div id='join' className='pt-[100px] flex justify-center flex-col text-center'>
       <h1 className='font-[700] md:text-[60px] text-[25px] join-h1'>Want to <span>Join</span>  Us?</h1>
       <p>To remain with us, it is essential that you diligently follow the steps provided</p>
       <div className='py-[100px] px-[15px] sm:px-[50px]  place-items-center gap-[10px] sm:gap-[50px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
